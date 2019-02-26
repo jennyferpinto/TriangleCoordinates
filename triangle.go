@@ -51,7 +51,7 @@ func CheckForPoint(p Coordinate, tr Triangle) bool {
 	}
 	return s >= 0 && t >= 0 && s+t <= D
 
-	// // this solution is dependent on the cyclic order of vertices and requires less comparisons and recomputation of values
+	// // this solution requires more comparisons and recomputation of values
 	// // projecting the chosen point onto each triangle segment by using the dot product.
 	// firstSide := (p.x-t.B.x)*(t.A.y-t.B.y) - (t.A.x-t.B.x)*(p.y-t.B.y)
 	// secondSide := (p.x-t.C.x)*(t.B.y-t.C.y) - (t.B.x-t.C.x)*(p.y-t.C.y)
